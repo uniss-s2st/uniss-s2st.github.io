@@ -41,6 +41,7 @@
 		<li><a href="#method-overview">Method Overview</a></li>
 		<li><a href="#inference-samples">Zero-shot S2ST Samples</a></li>
 		<li><a href="#emotion-samples">Emotion-preserved S2ST Samples</a></li>
+		<li><a href="#Comparison">Comparison with Existing Methods</a></li>
       </ul>
 	</p>
 
@@ -432,6 +433,242 @@
 						</audio>
 					</td>
 				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<div class="container pt-5 mt-5 shadow-lg p-5 mb-5 bg-white rounded">
+	<h2 id="Comparison" style="text-align: center;">Comparison with Other Methods</h2>
+	<p style="text-align: center;">
+		The samples are from the test sets of <a href="https://arxiv.org/pdf/2201.03713">CVSS-T</a> and <a href="https://arxiv.org/pdf/2205.12446">FLEURS</a>.
+	</p>
+	<div class="table-responsive pt-3">
+		<table class="table table-hover pt-2">
+			<thead>
+			<tr>
+			<th style="vertical-align : middle;text-align: center; width: 20%">Source</th>
+			<th style="vertical-align : middle;text-align: center; width: 20%">UniSS (Quality)</th>
+			<th style="vertical-align : middle;text-align: center; width: 20%">Seamless-Expressive</th>
+			<th style="vertical-align : middle;text-align: center; width: 20%">Seamless-Large-V2</th>
+			<th style="vertical-align : middle;text-align: center; width: 20%">GPT-4o Audio</th>
+			</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_01/source.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							Fuyao temple of guandi founded in the twenty eighth year of ming dynasty.
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_01/infer_UniSS.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							福耀关帝庙成立于明朝第二十八年。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_01/infer_Seamless-Ex.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							代明王朝的二十八年成立。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_01/infer_Seamless-L.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							不要死不也 out temple of granddy 成立渔民炒局太年。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_01/infer_GPT-4o.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							关帝庙建立于明朝二十八年。
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_02/source.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							When nurses enter the workplace these badges are used to identify their alma mater.
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_02/infer_UniSS.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							当护士进入工作场所时这些徽章用于识别他们的母校。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_02/infer_Seamless-Ex.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							当护士进入工作场所时这些规章被用来识别他们的母校。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_02/infer_Seamless-L.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							当护士进入工作场所时这些安克装备用来识别他们的母校。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_02/infer_GPT-4o.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							当护士进入工作场所时，这些徽章被用来识别他们的母校。
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_03/source.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							Process information is also mapped to file systems through directories.
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_03/infer_UniSS.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							进程信息也通过目录映射到文件系统。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_03/infer_Seamless-Ex.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							通过目录过程信息也被映射到文件系统中。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_03/infer_Seamless-L.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							通过目录过程信息也被映射到文件系统中。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_03/infer_GPT-4o.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							处理信息也通过目录映射到文件系统。
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_04/source.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							科学家们可以得出结论，暗物质对其他暗物质的影响方式与普通物质相同。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_04/infer_UniSS.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							Scientists can conclude that the way dark matter affects other dark matter is the same as it does for ordinary matter.
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_04/infer_Seamless-Ex.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							Scientists can conclude that dark matter affects other dark substances in the same way as ordinary matter.
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_04/infer_Seamless-L.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							Scientists can conclude that dark matter has the same effect on other dark matter as ordinary matter. 
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_04/infer_GPT-4o.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							Scientists can conclude that the way dark matter interacts with other dark matter is the same as how it interacts.
+						</div>
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_05/source.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							地壳近侧厚约 70 公里，远侧厚约 100 公里。
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_05/infer_UniSS.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							The crust is about 70 kilometers thick on the closer side and 100 kilometers on the farther side.
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_05/infer_Seamless-Ex.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							The visibility is about 70 km to the rear and about 100 km to the rear.
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_05/infer_Seamless-L.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							The Shell is about 70 kilometers to the right and about 100 kilometers to the left. 
+						</div>
+					</td>
+					<td>
+						<audio controls style="width: 100%; margin-bottom: 10px;">
+							<source src="audios/compare/example_05/infer_GPT-4o.wav" type="audio/wav">
+						</audio>
+						<div style="text-align: center; font-size: 14px; color: #666;">
+							The near section is thick to about 70 centimeters, while the far section is thick to about 100 centimeters.
+						</div>
+					</td>
+				</tr>
+
 			</tbody>
 		</table>
 	</div>
